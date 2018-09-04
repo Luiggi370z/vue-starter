@@ -1,2 +1,31 @@
 # vue-starter
-Basic configuration for a Vue app + SCSS + Vuex + Router + Mocha/Chai + Nightwatch, eslint, formatting
+
+## Project setup
+```
+npm install
+```
+
+### Compiles and hot-reloads for development
+```
+npm run serve
+```
+
+### Compiles and minifies for production
+```
+npm run build
+```
+
+### Lints and fixes files
+```
+npm run lint
+```
+
+### Run your unit tests
+```
+npm run test:unit
+```
+
+### Run your end-to-end tests
+```
+npm run test:e2e
+```
