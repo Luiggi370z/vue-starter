@@ -1,5 +1,21 @@
 # vue-starter
 
+## VS Code Plugins
+
+###Must
+- Vetur (Vue tooling)
+- ESLint
+- Prettier
+- Babel ES6/ES7
+
+###Optionals
+- Vue Peek (goto defs)
+- Auto Close Tag
+- Auto Rename Tag
+- Path Intellisense
+- EditorCOnfig
+
+
 ## Project setup
 ```
 npm install
