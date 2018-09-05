@@ -1,6 +1,6 @@
 import Vue from 'vue';
 import Vuex from 'vuex';
-import helloWorld from './helloWorld';
+import helloWorld from './modules/helloWorld';
 
 Vue.use(Vuex);
 
