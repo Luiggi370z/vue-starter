@@ -2,18 +2,18 @@
 
 ## VS Code Plugins
 
-###Must
+### Must
 - Vetur (Vue tooling)
 - ESLint
 - Prettier
 - Babel ES6/ES7
 
-###Optionals
+### Optionals
 - Vue Peek (goto defs)
 - Auto Close Tag
 - Auto Rename Tag
 - Path Intellisense
-- EditorCOnfig
+- EditorConfig
 
 
 ## Project setup
