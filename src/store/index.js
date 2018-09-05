@@ -5,7 +5,10 @@ import helloWorld from './helloWorld';
 Vue.use(Vuex);
 
 export default new Vuex.Store({
+  state: {},
+  mutations: {},
+  actions: {},
   modules: {
     helloWorld
   }
-})
+});
