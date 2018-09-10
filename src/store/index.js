@@ -1,8 +1,8 @@
-import Vue from 'vue';
-import Vuex from 'vuex';
-import helloWorld from './modules/helloWorld';
+import Vue from 'vue'
+import Vuex from 'vuex'
+import helloWorld from './modules/helloWorld'
 
-Vue.use(Vuex);
+Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {},
@@ -11,4 +11,4 @@ export default new Vuex.Store({
   modules: {
     helloWorld
   }
-});
+})

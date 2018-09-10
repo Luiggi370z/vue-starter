@@ -1,1 +1,1 @@
-export const UPDATE_MSG = 'UPDATE_MSG';
+export const UPDATE_MSG = 'UPDATE_MSG'
