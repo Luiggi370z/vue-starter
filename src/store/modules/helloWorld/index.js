@@ -23,6 +23,7 @@ const getters = {
 }
 
 const helloWorldModule = {
+  namespaced: true,
   state,
   mutations,
   actions,
