@@ -1,4 +1,5 @@
 # vue-starter
+Vue Starter project using Vue CLI 3.x and best practices.
 
 # Table of Contents
 * [VS Code Plugins](#vs-code-plugins)
