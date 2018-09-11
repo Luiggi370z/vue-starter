@@ -14,6 +14,17 @@ Vue Starter project with Vue CLI 3.x and best practices.
 
 For a long time I researched a good starter point to learn or to start a project with VueJS and basic plugins, best practices, conventions, file structure, and more, I found different pieces of what I was looking for so I decided to put them all together.
 
+So basically, what you have here is a vue starter project created with Vue CLI 3.x and essential configurations to start a clean and fast VueJS App:
+
+- Routing (Vue Router).
+- Store Management (Vuex).
+- Unit testing (mocha/chai).
+- e2e Testing (Nightwatch).
+- Lint and formatting (ESLint + Recommended).
+- Solid and recommended file structure (supports dumb and smart components).
+- Configuration files by environment.
+- Custom scripts.
+
 So feel free to fork and enjoy it =)
 
 ## Prerequisites
@@ -90,7 +101,7 @@ npm run test:e2e
 Folder structure is based on VUE CLI 3.x and some personal preferences:
 
 ```
-.
+src
 ├── app.css                 * Main app styles.
 ├── App.vue
 ├── api                     * Abstractions for making API requests
@@ -112,9 +123,24 @@ Folder structure is based on VUE CLI 3.x and some personal preferences:
 │   └── mutation-types.js
 ├── utils                   * Functions (regex value testing, constants or filters.)
 │   └── ...
-└── views                   * Routed components that represents pages.
-    └── ...
+├── views                   * Routed components that represents pages.
+│   └── ...
+└── .vscode                 * VS Code workspace settings to work with ESLint rules and formatting (you can also lint or fix on save ;D).
 ```
+
+**Some important root files**
+```
+.
+├── .editorconfig           * Configuration file that defines coding styles (also by programming language).
+├── .env                    * Configuration file for environment variables (env.production, env.local, env.uat, etc).
+├── .prettierrc             * Configuration file for formatting Prettier options.
+└── .vue.config.js          * Vue CLI vue configuration file (you can also add or overwrite webpack configuration from this file,
+                              check official documentation for more details).
+```
+
+### Interesting Resource
+
+[How to integrate ESlint with VueJs and Vetur](https://alligator.io/vuejs/eslint-vue-vetur/)
 
 ## Naming conventions
 
