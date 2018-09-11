@@ -125,15 +125,16 @@ src
 │   └── ...
 ├── views                   * Routed components that represents pages.
 │   └── ...
-└── .vscode                 * VS Code workspace settings to work with ESLint rules and formatting (you can also lint or fix on save ;D).
+└── .vscode                 * VS Code workspace settings to work with ESLint rules and formatting
+                              (you can also lint or fix on save ;D).
 ```
 
 **Some important root files**
 ```
 .
-├── .editorconfig           * Configuration file that defines coding styles (also by programming language).
-├── .env                    * Configuration file for environment variables (env.production, env.local, env.uat, etc).
-├── .prettierrc             * Configuration file for formatting Prettier options.
+├── .editorconfig           * Coding styles (also by programming language).
+├── .env                    * Environment variables with Vue CLI (env.production, env.local, env.uat, etc).
+├── .prettierrc             * Formatting Prettier options.
 └── .vue.config.js          * Vue CLI vue configuration file (you can also add or overwrite webpack configuration from this file,
                               check official documentation for more details).
 ```
