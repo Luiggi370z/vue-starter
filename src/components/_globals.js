@@ -1,5 +1,7 @@
-// global components registration if you need some base-components everywhere
-// You may need lodash for a couple of methods:
+// Global components registration if you need some base-components everywhere
+// 1. You may need lodash for a couple of methods.
+// 2. Import _globals.js within your main.js file
+// 3. Uncomment the following code:
 
 // import Vue from 'vue'
 // import upperFirst from 'lodash/upperFirst'
