@@ -163,3 +163,4 @@ Vue starter project is using the [VUE Recommended](https://vuejs.org/v2/style-gu
 I got inspired by:
 - https://vuex.vuejs.org/en/structure.html
 - https://itnext.io/how-to-structure-a-vue-js-project-29e4ddc1aeeb
+- https://github.com/chrisvfritz/7-secret-patterns
