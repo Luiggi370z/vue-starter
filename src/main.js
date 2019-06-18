@@ -1,5 +1,4 @@
 import Vue from 'vue'
-import '@/plugins/vue-moment'
 import '@/plugins/axios'
 import App from './App.vue'
 import router from './router'

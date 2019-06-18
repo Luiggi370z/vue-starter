@@ -1,11 +1,5 @@
 {
   "vetur.format.defaultFormatter.html": "js-beautify-html",
-  "vetur.format.defaultFormatterOptions": {
-    // https://github.com/vuejs/vetur/issues/833 html format issue until vetur gets new version of js-beautify
-    "js-beautify-html": {
-      "wrap_attributes": "force-expand-multiline",
-    }
-  },
   "eslint.validate": [
     "javascript",
     "javascriptreact",
@@ -14,8 +8,17 @@
       "autoFix": true
     }
   ],
-  "eslint.autoFixOnSave": false,
+  "eslint.autoFixOnSave": true,
   "editor.formatOnPaste": false,
-  "editor.formatOnSave": false,
+  "editor.formatOnSave": true,
   "editor.formatOnType": false,
+  "workbench.colorCustomizations": {
+    "titleBar.activeBackground": "#42b883",
+    "titleBar.inactiveBackground": "#42b88399",
+    "titleBar.activeForeground": "#15202b",
+    "titleBar.inactiveForeground": "#15202b99",
+    "statusBar.background": "#42b883",
+    "statusBarItem.hoverBackground": "#359268",
+    "statusBar.foreground": "#15202b"
+  },
 }

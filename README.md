@@ -1,14 +1,16 @@
 # vue-starter
+
 Vue Starter project with Vue CLI 3.x and best practices.
 
 # Table of Contents
-* [Getting Started](#getting-started)
-* [Prerequisites](#Prerequisites)
-* [VS Code Plugins](#vs-code-plugins)
-* [Project Setup](#project-setup)
-* [File Structure](#file-structure)
-* [LINT and Formatting](#lint-and-formatting)
-* [Resources](#resources)
+
+- [Getting Started](#getting-started)
+- [Prerequisites](#Prerequisites)
+- [VS Code Plugins](#vs-code-plugins)
+- [Project Setup](#project-setup)
+- [File Structure](#file-structure)
+- [LINT and Formatting](#lint-and-formatting)
+- [Resources](#resources)
 
 ## Getting Started
 
@@ -21,6 +23,7 @@ So basically, what you have here is a vue starter project created with Vue CLI 3
 - Unit testing (mocha/chai).
 - e2e Testing (Nightwatch).
 - Lint and formatting (ESLint + Recommended).
+- Date-fns (datetime library - functional approach https://date-fns.org/).
 - Solid and recommended file structure (supports dumb and smart components).
 - Configuration files by environment.
 - Custom scripts.
@@ -33,11 +36,13 @@ NodeJS
 https://nodejs.org/en/
 
 Vue CLI 3.x
+
 ```
 npm install -g @vue/cli
 ```
 
 After the installation of Vue CLI you can start the new vue cli [GUI](https://cli.vuejs.org/guide/creating-a-project.html#using-the-gui), just execute the following command in your terminal:
+
 ```
 vue ui
 ```
@@ -49,12 +54,14 @@ Now you can add, remove or update any existing configuration in this starter pro
 My favorite IDE is VS Code so I included a list of basic plugins for VueJS apps (if you use a different IDE I'm pretty sure there should be the same plugins for your IDE):
 
 ### Must
+
 - Vetur (Vue tooling)
 - ESLint
 - Prettier
 - Babel ES6/ES7
 
 ### Optionals
+
 - Vue Peek (goto defs)
 - Auto Close Tag
 - Auto Rename Tag
@@ -62,36 +69,43 @@ My favorite IDE is VS Code so I included a list of basic plugins for VueJS apps 
 - EditorConfig
 
 ## Project setup
+
 ```
 npm install
 ```
 
 ### Compiles, hot-reloads and open a browser for development
+
 ```
 npm start
 ```
 
 ### Compiles and hot-reloads for development
+
 ```
 npm run serve
 ```
 
 ### Compiles and minifies for production
+
 ```
 npm run build
 ```
 
 ### Lints and fixes files
+
 ```
 npm run lint
 ```
 
 ### Run your unit tests
+
 ```
 npm run test:unit
 ```
 
 ### Run your end-to-end tests
+
 ```
 npm run test:e2e
 ```
@@ -108,12 +122,15 @@ src
 ├── assets                  * Assets that are imported into your components.
 │   └── ...
 ├── components              * Components of the projects that are not the main views.
+│   └── ui                  * Internal components related to UI functionality like Button, DataTable, etc.
+│   └── layout              * Components used to stablish the layout of the app like TheFooter, TheTopBar, etc.
 │   └── ...
 ├── plugins                 * Init and config VueJS plugins(vue-moment, vuetify, etc).
 │   └── ...
-├── main.js
-├── mixins                  * Javascript code that is reused in different components.
+├── main.js                 * Entry point of the application.
+├── mixins                  * Common VueJS object(data, methods, etc) that can be reused from others VueJS objects.
 │   └── ...
+├── services                * All the common services. e.g. Authentication, hubs, etc.
 ├── router                  * All the routes of your projects.
 │   └── index.js
 ├── store                   * The Vuex constants in mutation-type.js, the Vuex modules in the subfolder modules
@@ -130,6 +147,7 @@ src
 ```
 
 **Some important root files**
+
 ```
 .
 ├── .editorconfig           * Coding styles (also by programming language).
@@ -148,7 +166,7 @@ src
 Here are a few important conventions from the Vue.js [official style guide](https://vuejs.org/v2/style-guide/)
 
 - Component names should always be multi-word, except for root “App” components. Use “UserCard” or “ProfileCard” instead of “Card” for example.
-Each component should be in its own file.
+  Each component should be in its own file.
 - Filenames of single-file components should either be always PascalCase or always kebab-case. Use “UserCard.vue” or “user-card.vue”.
 - Components that are only used once per page should begin with the prefix “The”, to denote that there can be only one. For example for a navbar or a footer you should use “TheNavbar.vue” or “TheFooter.vue”.
 - Child components should include their parent name as a prefix. For example if you would like a “Photo” component used in the “UserCard” you will name it “UserCardPhoto”. It’s for better readability since files in a folder are usually order alphabetically.
@@ -156,11 +174,12 @@ Each component should be in its own file.
 
 ## LINT and Formatting
 
-Vue starter project is using the [VUE Recommended](https://vuejs.org/v2/style-guide/#Priority-C-Rules-Recommended-Minimizing-Arbitrary-Choices-and-Cognitive-Overhead) set of rules plus a additional custom rules that you can find in ```.eslintrc.js``` file
+Vue starter project is using the [VUE Recommended](https://vuejs.org/v2/style-guide/#Priority-C-Rules-Recommended-Minimizing-Arbitrary-Choices-and-Cognitive-Overhead) set of rules plus a additional custom rules that you can find in `.eslintrc.js` file
 
 ## Resources
 
 I got inspired by:
+
 - https://vuex.vuejs.org/en/structure.html
 - https://itnext.io/how-to-structure-a-vue-js-project-29e4ddc1aeeb
 - https://github.com/chrisvfritz/7-secret-patterns
