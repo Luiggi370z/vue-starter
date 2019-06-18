@@ -122,8 +122,9 @@ src
 ├── assets                  * Assets that are imported into your components.
 │   └── ...
 ├── components              * Components of the projects that are not the main views.
-│   └── ui                  * Internal components related to UI functionality like Button, DataTable, etc.
-│   └── layout              * Components used to stablish the layout of the app like TheFooter, TheTopBar, etc.
+│   └── ui                  * Reusable across the whole app. Communication just by props and events, not application logic.
+│   └── layout              * Unique and one time use components that will help with app structure.
+│   └── <domain component>  * Belong to a specific domain. Reusable in different pages.
 │   └── ...
 ├── plugins                 * Init and config VueJS plugins(vue-moment, vuetify, etc).
 │   └── ...
@@ -183,3 +184,4 @@ I got inspired by:
 - https://vuex.vuejs.org/en/structure.html
 - https://itnext.io/how-to-structure-a-vue-js-project-29e4ddc1aeeb
 - https://github.com/chrisvfritz/7-secret-patterns
+- https://vueschool.io/articles/vuejs-tutorials/structuring-vue-components/
