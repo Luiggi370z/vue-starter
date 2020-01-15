@@ -8,7 +8,6 @@
       "autoFix": true
     }
   ],
-  "eslint.autoFixOnSave": true,
   "editor.formatOnPaste": false,
   "editor.formatOnSave": true,
   "editor.formatOnType": false,
@@ -20,5 +19,9 @@
     "statusBar.background": "#42b883",
     "statusBarItem.hoverBackground": "#359268",
     "statusBar.foreground": "#15202b"
+  },
+  "peacock.color": "#42b883",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
   },
 }
